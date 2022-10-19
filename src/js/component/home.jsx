@@ -41,7 +41,7 @@ const Home = () => {
 
 				<div 
 				onClick={() => setSelectedColor(("purple"))}
-				className={"light purple" + (selectedColor === "purple" ? " glow-p" : "")}></div>
+				className={((purple == true) ? "light purple glow-p" : "") }></div>
 
 
 			</div>
@@ -56,7 +56,7 @@ const Home = () => {
 			<button 
 			type="button" 
 			className="btn btn-extra  my-5 mx-2 p-2"
-			onClick={addPurple}
+			onClick={addPurple} 
 			>Add extra light</button>
         	</div>
 
